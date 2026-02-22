@@ -12,10 +12,9 @@ It features an integrated 8x8 font engine, batch-rendering to prevent server/cli
 
 ### 1. Initialization
 ```javascript
-// Triggered when a player joins the game
 onPlayerJoin = (id) => {
-    // Create a new screen instance
-    const myScreen = new Screen(
+    // Create a new screen instance (global var so code blocks can access it too)
+    myScreen = new Screen(
         id, 
         "main_display", 
         [0.5, 1, 0.5], // World position [x, y, z]
