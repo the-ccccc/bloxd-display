@@ -260,3 +260,9 @@ class Screen {
     );
   }
 }
+
+function tick() {
+  for (const screen of globalThis.activeScreens.values()) {
+    screen.onTick();
+  }
+}
