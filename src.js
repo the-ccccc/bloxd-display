@@ -175,7 +175,7 @@ class Screen {
     if (this.alwaysRender) this.render();
   }
 
-  drawText(text, x, y, offset = 1, color = "white") {
+  drawText(text, x, y, offset = 0, color = "white") {
     const colorIdx = this._getColorIndex(color);
     let cursorX = x;
 
